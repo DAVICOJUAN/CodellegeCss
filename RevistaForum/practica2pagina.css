@@ -1,0 +1,83 @@
+    * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    
+    header {
+        width: 100%;
+        height: 20vh;
+        background: rgb(196, 192, 192);
+    }
+    
+    header h1 .encabezado_o {
+        color: green;
+    }
+    
+    .imagen1 {
+        width: 100%;
+        height: 40vh;
+        background-image: url("./../Imagenes/img-ciudad-noche.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        border-color: white;
+        border-width: thin;
+        border-style: solid;
+        position: relative;
+    }
+    
+    .palabra {
+        border: 2px solid red;
+        width: 96%;
+        height: 90%;
+        position: absolute;
+        left: calc(2%);
+        top: calc(5%);
+    }
+    
+    .palabra_d {
+        position: absolute;
+        left: calc(50%);
+    }
+    
+    .palabra_i {
+        position: absolute;
+        top: calc(25%);
+    }
+    
+    .caja {
+        width: 100%;
+        height: 35%;
+    }
+    
+    .caja1,
+    .caja2,
+    .caja3,
+    .caja4 {
+        width: 20%;
+        height: 40vh;
+        float: left;
+        border-style: dashed;
+        margin-top: 30px;
+        margin-bottom: 5px;
+    }
+    
+    .caja1 {
+        margin-left: 5px;
+        margin-right: 20px;
+    }
+    
+    .caja2 {
+        margin-left: 20px;
+        margin-right: 25px;
+    }
+    
+    .caja3 {
+        margin-left: 20px;
+        margin-right: 25px;
+    }
+    
+    .caja4 {
+        margin-left: 25px;
+        margin-right: 5px;
+    }

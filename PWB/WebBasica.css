@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: rgb(196, 192, 192);
+    position: relative;
+    /*Obtiene las propiedades del padre, pero sin salirse de este elemento padre*/
+}
+
+header h1 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    width: 50vw;
+    height: 20vh;
+    text-align: center;
+    /*margin: auto;se centra contenido a en medio del margen*/
+    position: absolute;
+    top: calc(45vh);
+    /*Sirve para centrar en la caja que esta contenido el elemento*/
+    left: calc(25wh);
+    font-size: 50px;
+}
+
+#ArticuloPrincipal {
+    background: #F3F3F3;
+    width: 70%;
+    height: 95vh;
+    float: left;
+    padding: 10px;
+}
+
+#ArticuloPrincipal h2 {
+    width: 50px;
+    margin: auto;
+    text-align: center;
+}
+
+#ArticuloPrincipal section {
+    margin-top: 10px;
+    /*separacion entre el titulo y el texto*/
+    padding: 15px;
+    height: 60vh;
+    background: rgb(80, 85, 129);
+    color: #F2F2F2;
+}
+
+#ArticuloPrincipal section p {
+    text-align: justify;
+    font-size: 20px;
+    overflow: hidden;
+    height: 60vh;
+}
+
+aside {
+    background: #F2F2F2;
+    width: 30%;
+    height: 95vh;
+    box-sizing: border-box;
+    float: left;
+}
+
+aside article section img {
+    width: calc(90%);
+    height: 40vh;
+    display: block;
+    /*cambia la propiedad de en linea a bloque en etiquetas imagenes*/
+    margin: calc(5%) auto;
+    /*sirve para centrar las imagenes*/
+}
+
+footer {
+    clear: both;
+    /*toma en cuenta los dos elemntos que quedan flotando si no agrego esta propiedad*/
+    background: blue;
+    height: 5vh;
+}
+
+footer p {
+    width: 50vw;
+    margin: auto;
+    text-align: center;
+}

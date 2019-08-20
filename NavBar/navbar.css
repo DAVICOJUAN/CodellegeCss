@@ -1,0 +1,85 @@
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: #000;
+    height: 80vh;
+    justify-content: space-between;
+    /* align-items: stretch; */
+    align-content: space-around;
+    /*pone el espacio sobrante arriba y abajo*/
+    /*align-content:center*/
+}
+
+.flex-container div {
+    width: 100px;
+    /* height: 100px; */
+    margin: 10px;
+    font-size: 30px;
+    background: gray;
+}
+
+body {
+    margin: 0px;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(94, 179, 167);
+}
+
+ul {
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+}
+
+ul li {
+    list-style-type: none;
+    margin: 0 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    position: relative;
+    display: block;
+    padding: 5px;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.671);
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+ul:hover li a {
+    /* color:#000; */
+    transform: scale(2);
+    opacity: .2;
+    filter: blur(2px);
+}
+
+ul li a:hover {
+    transform: scale(2);
+    opacity: 1;
+    filter: blur(0);
+}
+
+ul li a::before {
+    content: '';
+    background: #000;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: .5s;
+}
+
+ul li a:hover:before {
+    transform: scaleX(1);
+    transition: .5s;
+    transform-origin: left;
+}
